@@ -1,6 +1,6 @@
 ## Pali Dictionary Project
 ### Introduction
-This project involves volunteer work to support part of development of the `digitalPālidictionary/dpd-db`, a resource for the `Sāsanārakkha Buddhist Sanctuary` Monk Training Centre. The goal is to enhance Pali language studies, sutta analysis, and Dhamma teachings through structured datasets, processing techniques and AI solution.
+This project involves volunteer work to support part of development of the `digitalPālidictionary/dpd-db`, a resource for the `Sāsanārakkha Buddhist Sanctuary` Monk Training Centre. The goal is to enhance Pali language studies, sutta analysis, and Dhamma teachings through structured datasets & documents, processing techniques and AI solution.
 
 ### Dataset Description
 1. `vocab_class_*.csv`
@@ -44,7 +44,14 @@ To process multiple requests asynchronously in the background. Instead of sendin
 4. Send responses to users
 
 #### Workflow 2
-(Details to be added)
+1. User inputs a `Pali` word.
+2. Search for the matching `Pali` word in the `pali_class/vocab/*` directory.
+3. If a match is found:
+    - Retrieve its ID, meaning, part of speech (POS) and relevant declensions/ conjugations.
+    - Get the `exercise number` based on vocab_class_*.csv, for example vocab_class_2.csv then find the exercises_class_2.txt.
+    - Identify the exercise number based on the matching `vocab_class_*.csv` file (e.g., `vocab_class_2.csv` > `exercises_class_2.txt`).
+    - Locate the corresponding exercise file `exercises_class_*.txt` for document check.
+4. Design `SYSTEM_PROMPT` & `USER_PROMPT`.
 
 ### Relevant Discussion
 1. https://github.com/digitalpalidictionary/dpd-db/discussions/33
