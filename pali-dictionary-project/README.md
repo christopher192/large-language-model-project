@@ -12,6 +12,7 @@ This project involves volunteer work to support part of development of the `digi
     - <b>sutta_1</b> - The name of the sutta where the word appears
     - <b>example_1</b> - An example sentence from the sutta using the word in context.
     - <b>source_2</b> to <b>source_4</b> - Additional sources where the word appears, following the same structure as <b>source_1</b>.
+
 2. `exercises_class_*.txt`
     <br>This dataset contains `Pali sentences` with their corresponding `English translations` and references from various `Buddhist scriptures`. The dataset is useful for `Pali language studies`, `sutta analysis`, and `Dhamma teachings`. 
     <br><br>Important document data for extraction
@@ -56,3 +57,14 @@ To process multiple requests asynchronously in the background. Instead of sendin
 ### Relevant Discussion
 1. https://github.com/digitalpalidictionary/dpd-db/discussions/33
 2. https://github.com/digitalpalidictionary/dpd-db/issues/45
+
+### Reference
+<b>POS (part of speech) Categories</b>
+- masc (Masculine, likely for nouns)
+- fem (Feminine, likely for nouns)
+- nt (Neuter, likely for nouns)
+- pr (Pronoun or Proper noun)
+- imp (Imperative, verb mood)
+- pp (Past participle)
+- ind (Indicative, verb mood)
+- adj (Adjective)
