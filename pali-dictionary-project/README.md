@@ -72,3 +72,6 @@ To process multiple requests asynchronously in the background. Instead of sendin
 ### Existing Issue
 1. Sometimes, the `JSON` response does not match expectations. To resolve this, the system should explain why it generated a particular response when asked.
     - Example: User question: Why is "class_example": "sāvako `<b>`dhammaṃ anussarati`</b>`" returned instead of "class_example": "sāvako dhammaṃ `<b>`anussarati`</b>`"? How can I ensure it returns "class_example": "sāvako dhammaṃ `<b>`anussarati`</b>`"? in `USER_PROMPT`.
+2. Invalid `JSON` output, eg output as ```json { ... } ``` instead of `{ ... }`. 
+    <!-- 1. Programically solve this by remove markdown code block. 
+    2. 2 API call.  -->
