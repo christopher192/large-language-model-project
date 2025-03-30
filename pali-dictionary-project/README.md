@@ -2,6 +2,8 @@
 ### Introduction
 This project involves volunteer work to support part of development of the `digitalPālidictionary/dpd-db`, a resource for the `Sāsanārakkha Buddhist Sanctuary` Monk Training Centre. The goal is to enhance Pali language studies, sutta analysis, and Dhamma teachings through structured datasets & documents, processing techniques and AI solution.
 
+### Problem Statement
+
 ### Dataset Description
 1. `vocab_class_*.csv`
     - <b>id</b> - Unique identifier for each Pali word entry.
