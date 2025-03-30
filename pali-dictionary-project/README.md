@@ -3,6 +3,7 @@
 This project involves volunteer work to support part of development of the `digitalPālidictionary/dpd-db`, a resource for the `Sāsanārakkha Buddhist Sanctuary` Monk Training Centre. The goal is to enhance Pali language studies, sutta analysis, and Dhamma teachings through structured datasets & documents, processing techniques and AI solution.
 
 ### Problem Statement
+(Details to be added)
 
 ### Dataset Description
 1. `vocab_class_*.csv`
@@ -29,12 +30,14 @@ This project involves volunteer work to support part of development of the `digi
 5. `new_suttas.csv`
     <br>A refined version of `suttas.csv` with improved formatting for better readability and usability.
 
-### To-do-list
-1. Word Matching
-    <br>Identify sentences containing the target Pali word, recognizing its various forms (e.g., declensions - nouns and conjugations - verbs). 
-    - Extract meaningful & relavant data as much as possible from `vocab_class_*.csv`.
-2. Relevance Filtering
-    <br>(Details to be added)
+### System Expectation
+1. Identify sentence containing the target Pali word, recognizing its various forms (e.g., declensions - nouns and conjugations - verbs). 
+    - Extract meaningful & relavant data as much as possible from `vocab_class_*.csv` as input to LLM.
+2. For each Pali word, extract a single relevant sentence and its english translation from the exercise data.
+3. Include the source reference for the extracted sentence.
+    -  If it is marked as `simpl`, preserve it.
+4. Pick the sentence in the exercise data that has source reference and is not marked by `$` or `%`.
+5. If the source reference of the extracted sentence does not match any of it from `vocab_class_2.csv`, the system should flag this case for manual review.
 
 ### Rule-based Approach
 (Details to be added)
@@ -58,6 +61,18 @@ To process multiple requests asynchronously in the background. Instead of sendin
     - Locate the corresponding exercise file `exercises_class_*.txt` for document check.
 4. Design `SYSTEM_PROMPT` & `USER_PROMPT`.
 
+### Existing Issue
+1. Sometimes, the `JSON` response does not match expectations. To resolve this, the system should explain why it generated a particular response when asked.
+    - Example: User question: Why is "class_example": "sāvako `<b>`dhammaṃ anussarati`</b>`" returned instead of "class_example": "sāvako dhammaṃ `<b>`anussarati`</b>`"? How can I ensure it returns "class_example": "sāvako dhammaṃ `<b>`anussarati`</b>`"? in `USER_PROMPT`.
+2. Invalid `JSON` output, eg output as ```json { ... } ``` instead of `{ ... }`. 
+    - Programmatically fix this by remove markdown code block. 
+    - 2 API calls, if `JSON` parsing still fails after first API, ask the API again for a valid `JSON` format.
+    - If the output format is consistently ```json { ... }```, do not prompt the model to return ```{ ... }```. Instead, handle the formatting programmatically.
+3. LLM struggles to map a `sutta number` to its corresponding `sutta name`.
+    - Simple rule-based lookup system instead of relying on an LLM. Example, extract sutta name based on sutta number from `new_suttas.csv`.
+    - If the LLM is not confident about the mapping, refers to the `CSV` instead of guessing.
+4. 
+
 ### Relevant Discussion
 1. https://github.com/digitalpalidictionary/dpd-db/discussions/33
 2. https://github.com/digitalpalidictionary/dpd-db/issues/45
@@ -72,11 +87,3 @@ To process multiple requests asynchronously in the background. Instead of sendin
 - pp (Past participle)
 - ind (Indicative, verb mood)
 - adj (Adjective)
-
-### Existing Issue
-1. Sometimes, the `JSON` response does not match expectations. To resolve this, the system should explain why it generated a particular response when asked.
-    - Example: User question: Why is "class_example": "sāvako `<b>`dhammaṃ anussarati`</b>`" returned instead of "class_example": "sāvako dhammaṃ `<b>`anussarati`</b>`"? How can I ensure it returns "class_example": "sāvako dhammaṃ `<b>`anussarati`</b>`"? in `USER_PROMPT`.
-2. Invalid `JSON` output, eg output as ```json { ... } ``` instead of `{ ... }`. 
-    - Programmatically fix this by remove markdown code block. 
-    - 2 API calls, if `JSON` parsing still fails after first API, ask the API again for a valid `JSON` format.
-    - If the output format is consistently ```json { ... }```, do not prompt the model to return ```{ ... }```. Instead, handle the formatting programmatically.
