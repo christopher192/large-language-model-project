@@ -21,9 +21,11 @@ This project involves volunteer work to support part of development of the `digi
     - <b>Pali Sentence</b>
     - <b>English Meaning of The Pali Sentence</b>
 3. `output_class_*.txt`
-    <br>(Details to be added)
+    <br>These files store the LLM batch processing `results` for Pali sentence extraction. The data will help to assess the accuracy of LLM.
 4. `suttas.csv`
-    <br>(Details to be added)
+    <br>This `CSV` file maps sutta numbers to their corresponding sutta names.
+5. `new_suttas.csv`
+    <br>A refined version of `suttas.csv` with improved formatting for better readability and usability.
 
 ### To-do-list
 1. Word Matching
@@ -74,4 +76,5 @@ To process multiple requests asynchronously in the background. Instead of sendin
     - Example: User question: Why is "class_example": "sāvako `<b>`dhammaṃ anussarati`</b>`" returned instead of "class_example": "sāvako dhammaṃ `<b>`anussarati`</b>`"? How can I ensure it returns "class_example": "sāvako dhammaṃ `<b>`anussarati`</b>`"? in `USER_PROMPT`.
 2. Invalid `JSON` output, eg output as ```json { ... } ``` instead of `{ ... }`. 
     - Programmatically fix this by remove markdown code block. 
-    - 2 API calls, if `JSON` parsing still fails after first API, ask the API again for a valid `JSON` format. 
+    - 2 API calls, if `JSON` parsing still fails after first API, ask the API again for a valid `JSON` format.
+    - If the output format is consistently ```json { ... }```, do not prompt the model to return ```{ ... }```. Instead, handle the formatting programmatically.
