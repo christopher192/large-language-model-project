@@ -71,7 +71,7 @@ To process multiple requests asynchronously in the background. Instead of sendin
 3. LLM struggles to map a `sutta number` to its corresponding `sutta name`.
     - Simple rule-based lookup system instead of relying on an LLM. Example, extract sutta name based on sutta number from `new_suttas.csv`.
     - If the LLM is not confident about the mapping, refers to the `CSV` instead of guessing.
-4. 
+4. Instead of focusing on crafting the perfect prompt, would improving (more structured) the `exercise data` and `input` help the LLM perform better?
 
 ### Relevant Discussion
 1. https://github.com/digitalpalidictionary/dpd-db/discussions/33
