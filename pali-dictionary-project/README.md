@@ -3,7 +3,7 @@
 This project involves volunteer work to support part of development of the `digitalPālidictionary/dpd-db`, a resource for the `Sāsanārakkha Buddhist Sanctuary` Monk Training Centre. The goal is to enhance Pali language studies, sutta analysis, and Dhamma teachings through structured datasets & documents, processing techniques and AI solution.
 
 ### Problem Statement
-(Details to be added)
+Extracting Pali sentences based on a given Pali word from exercise data cannot rely solely on regular expressions due to the unstructured nature of the text. Pali’s rich inflectional morphology, such as declensions and conjugations, create variations that simple regex patterns cannot effectively handle. Additionally, special markers like `simpl`, `$`, and `%` require careful handling, and ensuring accurate source referencing adds further complexity. The extracted sentence must also include its English translation, with the source reference clearly provided.
 
 ### Dataset Description
 1. `vocab_class_*.csv`
@@ -37,7 +37,7 @@ This project involves volunteer work to support part of development of the `digi
 3. Include the source reference for the extracted sentence.
     -  If it is marked as `simpl`, preserve it.
 4. Pick the sentence in the exercise data that has source reference and is not marked by `$` or `%`.
-5. If the source reference of the extracted sentence does not match any of it from `vocab_class_2.csv`, the system should flag this case for manual review.
+5. If the source reference of the extracted sentence does not match any of it from `vocab_class_2.csv`, the system should flag this case for manual review. (Ignore first until further instruction)
 
 ### Rule-based Approach
 (Details to be added)
