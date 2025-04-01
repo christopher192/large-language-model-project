@@ -30,7 +30,7 @@ Extracting Pali sentences based on a given Pali word from exercise data cannot r
 5. `new_suttas.csv`
     <br>A refined version of `suttas.csv` with improved formatting for better readability and usability.
 
-### System Expectation
+### Project Expectation
 1. Identify sentence containing the target Pali word, recognizing its various forms (e.g., declensions - nouns and conjugations - verbs). 
     - Extract meaningful & relavant data as much as possible from `vocab_class_*.csv` as input to LLM.
 2. For each Pali word, extract a single relevant sentence and its english translation from the exercise data.
@@ -61,6 +61,12 @@ To process multiple requests asynchronously in the background. Instead of sendin
     - Locate the corresponding exercise file `exercises_class_*.txt` for document check.
 4. Design `SYSTEM_PROMPT` & `USER_PROMPT`.
 
+### To-do List (Start from 1 April 2025)
+| No | Task | Date | Complete |
+| --- | -------- | --- | --- |
+| 1 | Ground Truth Generation | N/A | &cross; |
+| 1 | Compare Restructured Exercise vs Original Exercise | N/A | &cross; |
+
 ### Existing Issue
 1. Sometimes, the `JSON` response does not match expectations. To resolve this, the system should explain why it generated a particular response when asked.
     - Example: User question: Why is "class_example": "sāvako `<b>`dhammaṃ anussarati`</b>`" returned instead of "class_example": "sāvako dhammaṃ `<b>`anussarati`</b>`"? How can I ensure it returns "class_example": "sāvako dhammaṃ `<b>`anussarati`</b>`"? in `USER_PROMPT`.
@@ -72,6 +78,7 @@ To process multiple requests asynchronously in the background. Instead of sendin
     - Simple rule-based lookup system instead of relying on an LLM. Example, extract sutta name based on sutta number from `new_suttas.csv`.
     - If the LLM is not confident about the mapping, refers to the `CSV` instead of guessing.
 4. Instead of focusing on crafting the perfect prompt, would improving (more structured) the `exercise data` and `input` help the LLM perform better?
+    - Check `restructured_exercises_class_*.txt`.
 
 ### Relevant Discussion
 1. https://github.com/digitalpalidictionary/dpd-db/discussions/33
