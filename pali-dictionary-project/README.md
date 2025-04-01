@@ -64,9 +64,12 @@ To process multiple requests asynchronously in the background. Instead of sendin
 ### To-do List (Start from 1 April 2025)
 | No | Task | Description | Date | Complete |
 | --- | -------- | --- | --- | --- |
-| 1 | Manually Retrieve Sutta Names by Sutta Number | N/A | N/A | &cross; |
-| 2 | Generate Ground Truth Data | N/A | N/A | &cross; |
-| 3 | Compare Restructured Exercise vs. Original Exercise | N/A | N/A | &cross; |
+| 1 | Manually Retrieve Sutta Names by Sutta Number | - | N/A | &cross; |
+| 2 | Generate Ground Truth Data | - | N/A | &cross; |
+| 3 | Compare Restructured Exercise vs. Original Exercise | - | N/A | &cross; |
+| 4 | Experiment with JSON Output Behavior of LLM Model | - | N/A | &cross; |
+| 5 | Optimize LLM Prompt | - | N/A | &cross; |
+| 6 | Conduct More Experiment with Meaningful Input Data | - | N/A | &cross; |
 
 ### Existing Issue
 1. Sometimes, the `JSON` response does not match expectations. To resolve this, the system should explain why it generated a particular response when asked.
