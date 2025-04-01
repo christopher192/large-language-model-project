@@ -62,10 +62,11 @@ To process multiple requests asynchronously in the background. Instead of sendin
 4. Design `SYSTEM_PROMPT` & `USER_PROMPT`.
 
 ### To-do List (Start from 1 April 2025)
-| No | Task | Date | Complete |
-| --- | -------- | --- | --- |
-| 1 | Ground Truth Generation | N/A | &cross; |
-| 1 | Compare Restructured Exercise vs Original Exercise | N/A | &cross; |
+| No | Task | Description | Date | Complete |
+| --- | -------- | --- | --- | --- |
+| 1 | Manually Retrieve Sutta Names by Sutta Number | N/A | N/A | &cross; |
+| 2 | Generate Ground Truth Data | N/A | N/A | &cross; |
+| 3 | Compare Restructured Exercise vs. Original Exercise | N/A | N/A | &cross; |
 
 ### Existing Issue
 1. Sometimes, the `JSON` response does not match expectations. To resolve this, the system should explain why it generated a particular response when asked.
