@@ -70,9 +70,10 @@ To process multiple requests asynchronously in the background. Instead of sendin
 | 4 | Experiment with JSON Output Behavior of LLM Model | - | N/A | &cross; |
 | 5 | Optimize LLM Prompt | - | N/A | &cross; |
 | 6 | Conduct More Experiment with Meaningful Input Data | - | N/A | &cross; |
-| 7 | Multi-LLM Framework | - | N/A | &cross; |
+| 7 | Multi-LLM Framework | LangChain, LlamaIndex, LightRAG, etc | N/A | &cross; |
 | 8 | DeekSeek Experiment | - | N/A | &cross; |
-| 9 | Vector Database (milvus, weaviate, etc) | - | N/A | &cross; |
+| 9 | Vector Database | Milvus, Weaviate, etc For Storing Pali Exercise Data | N/A | &cross; |
+| 10 | Agent Framework | Milvus, Weaviate, etc For Storing Pali Exercise Data | N/A | &cross; |
 
 ### Existing Issue
 1. Sometimes, the `JSON` response does not match expectations. To resolve this, the system should explain why it generated a particular response when asked.
