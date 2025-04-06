@@ -1,11 +1,36 @@
-from langchain.chat_models import ChatOpenAI
+import openai
+from langchain_deepseek import ChatDeepSeek
 
-def get_openai_llm(api_key: str, model: str = "gpt-3.5-turbo", temperature: float = 0.7):
-    return ChatOpenAI(
-        model=model,
-        temperature=temperature,
-        api_key=api_key,
-    )
+class ChatDeepSeekWrapper():
+    def __init__(self, framework: str, api_key: str, model: str = "deepseek-chat", temperature: float = 0.7):
+        self.framework = framework
+        self.api_key = api_key
+        self.model = model
+        self.temperature = temperature
+    
+    def langchain_deekseek(self):
+        # Create an instance of ChatDeepSeek from langchain_deepseek
+        return ChatDeepSeek(
+            model=self.model,
+            api_key=self.api_key,
+            temperature=self.temperature
+        )
 
-def get_original_openai_llm_with_context(api_key: str, context: str, model: str = "gpt-3.5-turbo"):
-    return ""
+    def chat(self, message: str) -> str:
+        if self.framework == "langchain":
+             # Create an instance of ChatDeepSeek from langchain_deepseek
+            deekseek_llm = self.langchain_deekseek()
+            # Define the system and human prompts
+            messages = [
+                (
+                    "system",
+                    "You are a helpful assistant that translates English to French. Translate the user sentence.",
+                ),
+                ("human", "I love programming."),
+            ]
+            ai_msg = deekseek_llm.invoke(messages)
+            response_content = ai_msg["content"]
+            return response_content
+
+        # Fallback return statement if the provider is not "langchain"
+        return "Invalid provider type."
