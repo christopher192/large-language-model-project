@@ -73,7 +73,7 @@ To process multiple requests asynchronously in the background. Instead of sendin
 | 7 | Multi-LLM Framework | LangChain, LlamaIndex, LightRAG, Autogen, etc | N/A | In Progress |
 | 8 | DeekSeek Experiment | - | N/A | &cross; |
 | 9 | Vector Database | Milvus, Weaviate, etc For Storing Pali Exercise Data | N/A | &cross; |
-| 10 | Agent Framework | - | N/A | &cross; |
+| 10 | Agent Framework | MANUS AI for Agent to Optimize LLM Prompts, Preprocessing Agent, Postprocessing Agent | N/A | &cross; |
 | 11 | Prompt Management Framework | - | N/A | &cross; |
 | 12 | DevOps Backend | - | N/A | &cross; |
 | 13 | LLMOps | - | N/A | &cross; |
