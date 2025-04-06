@@ -78,6 +78,7 @@ To process multiple requests asynchronously in the background. Instead of sendin
 | 12 | DevOps Backend | - | N/A | &cross; |
 | 13 | LLMOps | - | N/A | &cross; |
 | 14 | Open Source LLM | Ollama, Hugging Face, etc | N/A | &cross; |
+| 15 | Cloud | AWS, Azure, etc | N/A | &cross; |
 
 ### Existing Issue
 1. Sometimes, the `JSON` response does not match expectations. To resolve this, the system should explain why it generated a particular response when asked.
