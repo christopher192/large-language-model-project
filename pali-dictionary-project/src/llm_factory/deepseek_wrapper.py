@@ -16,7 +16,7 @@ class ChatDeepSeekWrapper():
             temperature=self.temperature
         )
 
-    def chat(self, message: str) -> str:
+    def chat(self, system_prompt: str, user_prompt: str) -> str:
         if self.framework == "langchain":
              # Create an instance of ChatDeepSeek from langchain_deepseek
             deekseek_llm = self.langchain_deekseek()
@@ -24,12 +24,12 @@ class ChatDeepSeekWrapper():
             messages = [
                 (
                     "system",
-                    "You are a helpful assistant that translates English to French. Translate the user sentence.",
+                    system_prompt,
                 ),
-                ("human", "I love programming."),
+                ("human", user_prompt),
             ]
             ai_msg = deekseek_llm.invoke(messages)
-            response_content = ai_msg["content"]
+            response_content = ai_msg.content
             return response_content
 
         # Fallback return statement if the provider is not "langchain"
