@@ -71,8 +71,8 @@ To process multiple requests asynchronously in the background. Instead of sendin
 | 5 | Optimize LLM Prompt | - | N/A | &cross; |
 | 6 | Conduct More Experiment with Meaningful Input Data | - | N/A | &cross; |
 | 7 | Multi-LLM Framework | LangChain, LlamaIndex, LightRAG, Autogen, etc | N/A | In Progress |
-| 8 | DeekSeek Experiment | - | N/A | In Progress |
-| 9 | Gemini Experiment | - | N/A | In Progress |
+| 8 | DeekSeek Experiment | Evaluate the efficiency of an LLM in extracting Pali sentence | N/A | In Progress |
+| 9 | Gemini Experiment | Evaluate the efficiency of an LLM in extracting Pali sentence | N/A | In Progress |
 | 10 | Vector Database | Milvus, Weaviate, etc For Storing Pali Exercise Data | N/A | &cross; |
 | 11 | Agent Framework | MANUS AI for Agent to Optimize LLM Prompts, Preprocessing Agent, Postprocessing Agent | N/A | &cross; |
 | 12 | Prompt Management Framework | - | N/A | &cross; |
