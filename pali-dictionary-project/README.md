@@ -71,14 +71,15 @@ To process multiple requests asynchronously in the background. Instead of sendin
 | 5 | Optimize LLM Prompt | - | N/A | &cross; |
 | 6 | Conduct More Experiment with Meaningful Input Data | - | N/A | &cross; |
 | 7 | Multi-LLM Framework | LangChain, LlamaIndex, LightRAG, Autogen, etc | N/A | In Progress |
-| 8 | DeekSeek Experiment | - | N/A | &cross; |
-| 9 | Vector Database | Milvus, Weaviate, etc For Storing Pali Exercise Data | N/A | &cross; |
-| 10 | Agent Framework | MANUS AI for Agent to Optimize LLM Prompts, Preprocessing Agent, Postprocessing Agent | N/A | &cross; |
-| 11 | Prompt Management Framework | - | N/A | &cross; |
-| 12 | DevOps Backend | - | N/A | &cross; |
-| 13 | LLMOps | - | N/A | &cross; |
-| 14 | Open Source LLM | Ollama, Hugging Face, etc | N/A | &cross; |
-| 15 | Cloud | AWS, Azure, etc | N/A | &cross; |
+| 8 | DeekSeek Experiment | - | N/A | In Progress |
+| 9 | Gemini Experiment | - | N/A | In Progress |
+| 10 | Vector Database | Milvus, Weaviate, etc For Storing Pali Exercise Data | N/A | &cross; |
+| 11 | Agent Framework | MANUS AI for Agent to Optimize LLM Prompts, Preprocessing Agent, Postprocessing Agent | N/A | &cross; |
+| 12 | Prompt Management Framework | - | N/A | &cross; |
+| 13 | DevOps Backend | - | N/A | &cross; |
+| 14 | LLMOps | - | N/A | &cross; |
+| 15 | Open Source LLM | Ollama, Hugging Face, etc | N/A | &cross; |
+| 16 | Cloud | AWS, Azure, etc | N/A | &cross; |
 
 ### Existing Issue
 1. Sometimes, the `JSON` response does not match expectations. To resolve this, the system should explain why it generated a particular response when asked.
@@ -107,3 +108,5 @@ To process multiple requests asynchronously in the background. Instead of sendin
 - pp (Past participle)
 - ind (Indicative, verb mood)
 - adj (Adjective)
+
+<b>Prompt Technique:</b> https://www.kaggle.com/whitepaper-prompt-engineering
