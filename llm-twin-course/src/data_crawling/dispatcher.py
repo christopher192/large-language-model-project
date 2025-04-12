@@ -2,6 +2,7 @@ import re
 from aws_lambda_powertools import Logger
 from crawlers.base import BaseCrawler
 from crawlers.custom_article import CustomArticleCrawler
+
 logger = Logger(service="llm-twin-course/crawler")
 
 class CrawlerDispatcher:
