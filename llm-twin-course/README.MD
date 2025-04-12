@@ -5,7 +5,7 @@ As a software developer with limited hands-on experience in machine learning, I 
 ### Architecture of The LLM Twin
 1. Data Collection Pipeline
     - Crawl digital data from various social media platforms, such as `Medium`, `Substack` and `GitHub`.
-    - Clean, normalize and load the data to a `Mongo DB` through a series of ETL pipelines.
+    - Clean, normalize and load the data to a `Mongo DB` through a series of `ETL` pipelines.
     - Send database changes to a `RabbitMQ` queue using the `CDC pattern`.
     - Package the crawlers as `AWS Lambda` functions.
 2. The Feature Pipeline
