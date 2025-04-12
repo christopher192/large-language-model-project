@@ -1,6 +1,6 @@
 ## LLM Twin Course (End-To-End Framework For Production-Ready LLM System)
 ### Introduction
-As a software developer with limited hands-on experience in machine learning, I wish to expand my understanding of how to design and implement an end-to-end pipeline for production-ready large language model (LLM) systems. The LLM Twin Course (End-To-End Framework for Production-Ready LLM Systems) provides a comprehensive and practical roadmap to achieving this goal.
+As a software developer with limited hands-on experience in machine learning, I wish to expand my understanding of how to design and implement an end-to-end pipeline for production-ready large language model (LLM) system. The LLM Twin Course (End-To-End Framework for Production-Ready LLM System) provides a comprehensive and practical roadmap to achieving this goal.
 
 ### Architecture of The LLM Twin
 1. Data Collection Pipeline
