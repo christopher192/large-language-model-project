@@ -1,3 +1,19 @@
 ## LLM Twin Course (End-To-End Framework For Production-Ready LLM System)
 ### Introduction
-As a software developer with limited experience in deploying production-grade LLMs. The course will help me to expand my expertise in this domain.
+As a software developer with limited hands-on experience in machine learning, I wish to expand my understanding of how to design and implement an end-to-end pipeline for production-ready large language model (LLM) systems. The LLM Twin Course (End-To-End Framework for Production-Ready LLM Systems) provides a comprehensive and practical roadmap to achieving this goal.
+
+### Architecture of The LLM Twin
+1. Data Collection Pipeline
+    - Crawl digital data from various social media platforms, such as `Medium`, `Substack` and `GitHub`.
+    - Clean, normalize and load the data to a `Mongo DB` through a series of ETL pipelines.
+    - Send database changes to a `RabbitMQ` queue using the `CDC pattern`.
+    - Package the crawlers as `AWS Lambda` functions.
+2. The Feature Pipeline
+3. The Training Pipeline
+4. The Inference Pipeline
+
+### Reference
+1. https://www.comet.com/site/blog/an-end-to-end-framework-for-production-ready-llm-systems-by-building-your-llm-twin/
+2. https://github.com/decodingml/llm-twin-course
+3. https://github.com/PacktPublishing/LLM-Engineers-Handbook
+4. https://github.com/SylphAI-Inc/LLM-engineer-handbook
