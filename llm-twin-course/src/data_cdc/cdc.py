@@ -1,5 +1,6 @@
 import json
 import logging
+
 from bson import json_util
 from config import settings
 from core.db.mongo import MongoDatabaseConnector
@@ -7,6 +8,7 @@ from core.logger_utils import get_logger
 from core.mq import publish_to_rabbitmq
 
 logger = get_logger(__file__)
+
 
 def stream_process():
     try:
@@ -40,6 +42,7 @@ def stream_process():
 
     except Exception as e:
         logger.error(f"An error occurred: {e}")
+
 
 if __name__ == "__main__":
     stream_process()

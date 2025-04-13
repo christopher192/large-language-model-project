@@ -1,16 +1,21 @@
 import uuid
 from typing import List, Optional
+
 from pydantic import UUID4, BaseModel, ConfigDict, Field
 from pymongo import errors
+
 import core.logger_utils as logger_utils
 from core.db.mongo import connection
 from core.errors import ImproperlyConfigured
 
 _database = connection.get_database("twin")
+
 logger = logger_utils.get_logger(__name__)
+
 
 class BaseDocument(BaseModel):
     id: UUID4 = Field(default_factory=uuid.uuid4)
+
     model_config = ConfigDict(from_attributes=True, populate_by_name=True)
 
     @classmethod
@@ -98,12 +103,14 @@ class BaseDocument(BaseModel):
 
         return cls.Settings.name
 
+
 class UserDocument(BaseDocument):
     first_name: str
     last_name: str
 
     class Settings:
         name = "users"
+
 
 class RepositoryDocument(BaseDocument):
     name: str
@@ -114,6 +121,7 @@ class RepositoryDocument(BaseDocument):
     class Settings:
         name = "repositories"
 
+
 class PostDocument(BaseDocument):
     platform: str
     content: dict
@@ -121,6 +129,7 @@ class PostDocument(BaseDocument):
 
     class Settings:
         name = "posts"
+
 
 class ArticleDocument(BaseDocument):
     platform: str

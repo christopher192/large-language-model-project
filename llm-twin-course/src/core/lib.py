@@ -1,11 +1,11 @@
 from core.errors import ImproperlyConfigured
 
+
 def split_user_full_name(user: str | None) -> tuple[str, str]:
     if user is None:
         raise ImproperlyConfigured("User name is empty")
 
     name_tokens = user.split(" ")
-
     if len(name_tokens) == 0:
         raise ImproperlyConfigured("User name is empty")
     elif len(name_tokens) == 1:
@@ -15,6 +15,8 @@ def split_user_full_name(user: str | None) -> tuple[str, str]:
 
     return first_name, last_name
 
+
 def flatten(nested_list: list) -> list:
     """Flatten a list of lists into a single list."""
+
     return [item for sublist in nested_list for item in sublist]

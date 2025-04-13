@@ -1,20 +1,32 @@
-from pathlib import Path
-from pydantic_settings import BaseSettings, SettingsConfigDict
+from pymongo import MongoClient
 
-ROOT_DIR = str(Path(__file__).parent.parent.parent)
 
-class Settings(BaseSettings):
-    model_config = SettingsConfigDict(env_file=ROOT_DIR, env_file_encoding="utf-8")
+def insert_data_to_mongodb(uri, database_name, collection_name, data):
+    """
+    Insert data into a MongoDB collection.
 
-    MONGO_DATABASE_HOST: str = (
-        "mongodb://mongo1:30001,mongo2:30002,mongo3:30003/?replicaSet=my-replica-set"
+    :param uri: MongoDB URI
+    :param database_name: Name of the database
+    :param collection_name: Name of the collection
+    :param data: Data to be inserted (dict)
+    """
+    client = MongoClient(uri)
+    db = client[database_name]
+    collection = db[collection_name]
+
+    try:
+        result = collection.insert_one(data)
+        print(f"Data inserted with _id: {result.inserted_id}")
+    except Exception as e:
+        print(f"An error occurred: {e}")
+    finally:
+        client.close()
+
+
+if __name__ == "__main__":
+    insert_data_to_mongodb(
+        "mongodb://localhost:30001,localhost:30002,localhost:30003/?replicaSet=my-replica-set",
+        "twin",
+        "posts",
+        {"platform": "linkedin", "content": "Test content"}
     )
-    MONGO_DATABASE_NAME: str = "twin"
-
-    RABBITMQ_HOST: str = "mq"  # or localhost if running outside Docker
-    RABBITMQ_PORT: int = 5672
-    RABBITMQ_DEFAULT_USERNAME: str = "guest"
-    RABBITMQ_DEFAULT_PASSWORD: str = "guest"
-    RABBITMQ_QUEUE_NAME: str = "default"
-
-settings = Settings()

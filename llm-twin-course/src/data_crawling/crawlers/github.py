@@ -2,11 +2,14 @@ import os
 import shutil
 import subprocess
 import tempfile
+
 from aws_lambda_powertools import Logger
 from core.db.documents import RepositoryDocument
+
 from crawlers.base import BaseCrawler
 
 logger = Logger(service="llm-twin-course/crawler")
+
 
 class GithubCrawler(BaseCrawler):
     model = RepositoryDocument

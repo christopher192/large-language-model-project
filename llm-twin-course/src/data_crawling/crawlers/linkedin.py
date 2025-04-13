@@ -1,5 +1,6 @@
 import time
 from typing import Dict, List
+
 from aws_lambda_powertools import Logger
 from bs4 import BeautifulSoup
 from bs4.element import Tag
@@ -7,9 +8,11 @@ from config import settings
 from core.db.documents import PostDocument
 from core.errors import ImproperlyConfigured
 from selenium.webdriver.common.by import By
+
 from crawlers.base import BaseAbstractCrawler
 
 logger = Logger(service="llm-twin-course/crawler")
+
 
 class LinkedInCrawler(BaseAbstractCrawler):
     model = PostDocument

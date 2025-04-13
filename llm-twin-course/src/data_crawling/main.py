@@ -1,4 +1,5 @@
 from typing import Any
+
 from aws_lambda_powertools import Logger
 from aws_lambda_powertools.utilities.typing import LambdaContext
 from core import lib
@@ -12,6 +13,7 @@ _dispatcher = CrawlerDispatcher()
 _dispatcher.register("medium", CustomArticleCrawler)
 _dispatcher.register("linkedin", LinkedInCrawler)
 _dispatcher.register("github", GithubCrawler)
+
 
 def handler(event, context: LambdaContext | None = None) -> dict[str, Any]:
     first_name, last_name = lib.split_user_full_name(event.get("user"))
@@ -28,9 +30,10 @@ def handler(event, context: LambdaContext | None = None) -> dict[str, Any]:
     except Exception as e:
         return {"statusCode": 500, "body": f"An error occurred: {str(e)}"}
 
+
 if __name__ == "__main__":
     event = {
-        "user": "Christopher Hu",
-        "link": "https://www.linkedin.com/in/christopher-h-1545a1234/",
+        "user": "Paul Iuztin",
+        "link": "https://www.linkedin.com/in/vesaalexandru/",
     }
     handler(event, None)

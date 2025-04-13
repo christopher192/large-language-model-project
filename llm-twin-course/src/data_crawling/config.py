@@ -1,7 +1,9 @@
 from pathlib import Path
+
 from pydantic_settings import BaseSettings, SettingsConfigDict
 
 ROOT_DIR = str(Path(__file__).parent.parent.parent)
+
 
 class Settings(BaseSettings):
     model_config = SettingsConfigDict(env_file=ROOT_DIR, env_file_encoding="utf-8")
@@ -14,5 +16,6 @@ class Settings(BaseSettings):
     # Optional LinkedIn credentials for scraping your profile
     LINKEDIN_USERNAME: str | None = None
     LINKEDIN_PASSWORD: str | None = None
+
 
 settings = Settings()

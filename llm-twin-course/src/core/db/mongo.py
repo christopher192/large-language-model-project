@@ -1,9 +1,11 @@
 from pymongo import MongoClient
 from pymongo.errors import ConnectionFailure
+
 from core.config import settings
 from core.logger_utils import get_logger
 
 logger = get_logger(__file__)
+
 
 class MongoDatabaseConnector:
     """Singleton class to connect to MongoDB database."""
@@ -33,5 +35,6 @@ class MongoDatabaseConnector:
         if self._instance:
             self._instance.close()
             logger.info("Connected to database has been closed.")
+
 
 connection = MongoDatabaseConnector()

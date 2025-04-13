@@ -1,9 +1,11 @@
 from qdrant_client import QdrantClient, models
 from qdrant_client.http.models import Batch, Distance, VectorParams
+
 import core.logger_utils as logger_utils
 from core.config import settings
 
 logger = logger_utils.get_logger(__name__)
+
 
 class QdrantDatabaseConnector:
     _instance: QdrantClient | None = None
