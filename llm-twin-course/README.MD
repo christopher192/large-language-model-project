@@ -18,6 +18,7 @@ As a software developer with hands-on experience in machine learning, I have wor
 3. https://github.com/PacktPublishing/LLM-Engineers-Handbook
 4. https://github.com/SylphAI-Inc/LLM-engineer-handbook
 
+https://decodingml.substack.com/p/an-end-to-end-framework-for-production
 https://medium.com/decodingml/your-content-is-gold-i-turned-3-years-of-blog-posts-into-an-llm-training-d19c265bdd6e
 https://medium.com/decodingml/i-replaced-1000-lines-of-polling-code-with-50-lines-of-cdc-magic-4d31abd3bc3b
 https://medium.com/decodingml/sota-python-streaming-pipelines-for-fine-tuning-llms-and-rag-in-real-time-82eb07795b87
