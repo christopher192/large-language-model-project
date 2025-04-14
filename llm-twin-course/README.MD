@@ -9,6 +9,8 @@ As a software developer with hands-on experience in machine learning, I have wor
     - Send database changes to a `RabbitMQ` queue using the `CDC pattern`.
     - Package the crawlers as `AWS Lambda` functions.
 2. The Feature Pipeline
+    - Consume messages in real-time from a queue through a `Bytewax` streaming pipeline.
+    - Every message will be cleaned, chunked, embedded and loaded into a `Qdrant` vector DB.
 3. The Training Pipeline
 4. The Inference Pipeline
 
@@ -17,9 +19,12 @@ As a software developer with hands-on experience in machine learning, I have wor
 2. https://github.com/decodingml/llm-twin-course
 3. https://github.com/PacktPublishing/LLM-Engineers-Handbook
 4. https://github.com/SylphAI-Inc/LLM-engineer-handbook
+5. https://decodingml.substack.com/p/an-end-to-end-framework-for-production
 
-https://decodingml.substack.com/p/an-end-to-end-framework-for-production
-https://medium.com/decodingml/your-content-is-gold-i-turned-3-years-of-blog-posts-into-an-llm-training-d19c265bdd6e
-https://medium.com/decodingml/i-replaced-1000-lines-of-polling-code-with-50-lines-of-cdc-magic-4d31abd3bc3b
-https://medium.com/decodingml/sota-python-streaming-pipelines-for-fine-tuning-llms-and-rag-in-real-time-82eb07795b87
-https://medium.com/decodingml/the-4-advanced-rag-algorithms-you-must-know-to-implement-5d0c7f1199d2
+
+Part 1: https://medium.com/decodingml/an-end-to-end-framework-for-production-ready-llm-systems-by-building-your-llm-twin-2cc6bb01141f
+<br>Part 2: https://medium.com/decodingml/your-content-is-gold-i-turned-3-years-of-blog-posts-into-an-llm-training-d19c265bdd6e
+<br>Part 3: https://medium.com/decodingml/i-replaced-1000-lines-of-polling-code-with-50-lines-of-cdc-magic-4d31abd3bc3b
+<br>Part 4: https://medium.com/decodingml/sota-python-streaming-pipelines-for-fine-tuning-llms-and-rag-in-real-time-82eb07795b87
+<br>Part 5: https://medium.com/decodingml/the-4-advanced-rag-algorithms-you-must-know-to-implement-5d0c7f1199d2
+<br>Part 6: https://medium.com/decodingml/turning-raw-data-into-fine-tuning-datasets-dc83657d1280
