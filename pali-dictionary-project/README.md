@@ -97,6 +97,8 @@ To process multiple requests asynchronously in the background. Instead of sendin
 ### Relevant Discussion
 1. https://github.com/digitalpalidictionary/dpd-db/discussions/33
 2. https://github.com/digitalpalidictionary/dpd-db/issues/45
+3. https://github.com/sasanarakkha/dpd-db-sbs/issues/1
+4. https://github.com/sasanarakkha/dpd-db-sbs/issues/25
 
 ### Reference
 <b>POS (part of speech) Categories</b>
