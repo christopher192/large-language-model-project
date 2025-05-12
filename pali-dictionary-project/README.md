@@ -88,8 +88,8 @@ To process multiple requests asynchronously in the background. Instead of sendin
     - Programmatically fix this by remove markdown code block. 
     - 2 API calls, if `JSON` parsing still fails after first API, ask the API again for a valid `JSON` format.
     - If the output format is consistently ```json { ... }```, do not prompt the model to return ```{ ... }```. Instead, handle the formatting programmatically.
-    - Function calling - https://platform.openai.com/docs/guides/function-calling
-    - Structured output - https://platform.openai.com/docs/guides/structured-outputs
+    - Utilize function calling - https://platform.openai.com/docs/guides/function-calling
+    - utilize structured output - https://platform.openai.com/docs/guides/structured-outputs
 3. LLM struggles to map a `sutta number` to its corresponding `sutta name`.
     - Simple rule-based lookup system instead of relying on an LLM. Example, extract sutta name based on sutta number from `new_suttas.csv`.
     - If the LLM is not confident about the mapping, refers to the `CSV` instead of guessing.
