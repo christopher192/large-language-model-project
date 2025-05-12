@@ -85,11 +85,11 @@ To process multiple requests asynchronously in the background. Instead of sendin
 1. Sometimes, the `JSON` response does not match expectations. To resolve this, the system should explain why it generated a particular response when asked.
     - Example: User question: Why is "class_example": "sāvako `<b>`dhammaṃ anussarati`</b>`" returned instead of "class_example": "sāvako dhammaṃ `<b>`anussarati`</b>`"? How can I ensure it returns "class_example": "sāvako dhammaṃ `<b>`anussarati`</b>`"? in `USER_PROMPT`.
 2. Invalid `JSON` output, eg output as ```json { ... } ``` instead of `{ ... }`. 
-    - Programmatically fix this by remove markdown code block. 
+    - Programmatically fix this by remove markdown code block.
     - 2 API calls, if `JSON` parsing still fails after first API, ask the API again for a valid `JSON` format.
     - If the output format is consistently ```json { ... }```, do not prompt the model to return ```{ ... }```. Instead, handle the formatting programmatically.
     - Utilize function calling - https://platform.openai.com/docs/guides/function-calling
-    - utilize structured output - https://platform.openai.com/docs/guides/structured-outputs
+    - Utilize structured output - https://platform.openai.com/docs/guides/structured-outputs
 3. LLM struggles to map a `sutta number` to its corresponding `sutta name`.
     - Simple rule-based lookup system instead of relying on an LLM. Example, extract sutta name based on sutta number from `new_suttas.csv`.
     - If the LLM is not confident about the mapping, refers to the `CSV` instead of guessing.
