@@ -95,6 +95,8 @@ To process multiple requests asynchronously in the background. Instead of sendin
     - If the LLM is not confident about the mapping, refers to the `CSV` instead of guessing.
 4. Instead of focusing on crafting the perfect prompt, would improving (more structured) the `exercise data` and `input` help the LLM perform better?
     - Check `restructured_exercises_class_*.txt`.
+5. Unicode character issue
+    - `UnicodeDecodeError` when saved the data to .csv, need to evaluate further. 
 
 ### Relevant Discussion
 1. https://github.com/digitalpalidictionary/dpd-db/discussions/33
