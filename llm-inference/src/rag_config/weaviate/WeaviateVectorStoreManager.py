@@ -7,34 +7,34 @@ from llama_index.core import Document
 from llama_index.vector_stores.weaviate import WeaviateVectorStore
 from llama_index.core.indices.vector_store import VectorStoreIndex
 from llama_index.core.service_context import ServiceContext
-from llama_index.core.storage_context import StorageContext
-from llama_index.core.node_parser import SimpleNodeParser
+# from llama_index.core.storage_context import StorageContext
+# from llama_index.core.node_parser import SimpleNodeParser
 
 class WeaviateVectorStoreManager:
     def __init__(self, config):
         self.config = config
-        self.client = None
-        self.vector_store = None
+        self.weaviate_client = None
+        self.llama_vector_store = None
 
     def load_vector_store(self):
         weaviate_url = self.config.get("weaviate_url")
         api_key = self.config.get("api_key")
 
-        self.client = weaviate.connect_to_weaviate_cloud(
+        self.weaviate_client = weaviate.connect_to_weaviate_cloud(
             cluster_url=weaviate_url,
             auth_credentials=Auth.api_key(api_key),
         )
 
-        print(self.client.is_ready())
+        print(self.weaviate_client.is_ready())
 
-        self.vector_store = WeaviateVectorStore(
-            weaviate_client=self.client,
+        self.llama_vector_store = WeaviateVectorStore(
+            weaviate_client=self.weaviate_client,
             index_name="LlamaIndex"
         )
 
     def close(self):
-        if self.client:
-            self.client.close()
+        if self.weaviate_client:
+            self.weaviate_client.close()
 
     def get_knowledge_base_document(self, path: str) -> list:
         local_files = glob.glob(os.path.join(path, "**", "*.txt"), recursive=True)
@@ -56,10 +56,10 @@ class WeaviateVectorStoreManager:
         return documents
     
     def insert_document(self, documents: list[Document]):
-        if not self.vector_store:
+        if not self.llama_vector_store:
             return
 
-        storage_context = StorageContext.from_defaults(vector_store=self.vector_store)
+        storage_context = StorageContext.from_defaults(vector_store=self.llama_vector_store)
         service_context = ServiceContext.from_defaults()
 
         parser = SimpleNodeParser()
@@ -69,7 +69,7 @@ class WeaviateVectorStoreManager:
         index.insert_nodes(nodes)
     
     def reset_weaviate_vector_store(self):
-        schema = self.client.schema.get_schema()
+        schema = self.weaviate_client.schema.get_schema()
         classes = schema.get("classes", [])
 
         if not classes:
@@ -78,6 +78,6 @@ class WeaviateVectorStoreManager:
         for cls in classes:
             class_name = cls["class"]
             try:
-                self.client.schema.delete_class(name=class_name)
+                self.weaviate_client.schema.delete_class(name=class_name)
             except Exception as e:
                 print(f"failed to delete class '{class_name}': {e}")
