@@ -9,3 +9,9 @@ Without Chunking
 Retrieval is vague
 Context is too big to process
 Search is slow and inaccurate
+
+Use Case	chunk_size	chunk_overlap
+General text documents	512	50
+FAQs / Short entries	256	30
+Long form articles	1024	100
+
