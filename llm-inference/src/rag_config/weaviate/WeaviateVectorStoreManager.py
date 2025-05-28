@@ -3,12 +3,14 @@ import os
 import glob
 import weaviate
 from weaviate.classes.init import Auth
-from llama_index.core import Document
+from llama_index.core import Document, Settings
 from llama_index.vector_stores.weaviate import WeaviateVectorStore
 from llama_index.core.indices.vector_store import VectorStoreIndex
-from llama_index.core.service_context import ServiceContext
-# from llama_index.core.storage_context import StorageContext
-# from llama_index.core.node_parser import SimpleNodeParser
+from llama_index.core.schema import TextNode
+from llama_index.core.storage import StorageContext
+from llama_index.core.node_parser import LangchainNodeParser
+from langchain.text_splitter import RecursiveCharacterTextSplitter
+from llm_config import EmbeddingModelBuilder
 
 class WeaviateVectorStoreManager:
     def __init__(self, config):
@@ -60,16 +62,52 @@ class WeaviateVectorStoreManager:
             return
 
         storage_context = StorageContext.from_defaults(vector_store=self.llama_vector_store)
-        service_context = ServiceContext.from_defaults()
+        
+        embedding_model_manager = EmbeddingModelBuilder(self.config)
+        embedding_model = embedding_model_manager.initialize("huggingface")
 
-        parser = SimpleNodeParser()
-        nodes = parser.get_nodes_from_documents(documents)
+        # replace ServiceContext with llama_index.core.Settings
+        Settings.embedding_model = embedding_model
+        
+        parser = LangchainNodeParser(
+            RecursiveCharacterTextSplitter(
+                is_separator_regex=True, separators=['\n\n', '(?<=[.!?])'], 
+                chunk_size=1000, 
+                chunk_overlap=0
+            )
+        )
 
-        index = VectorStoreIndex([], storage_context=storage_context, service_context=service_context)
-        index.insert_nodes(nodes)
+        node = []
+
+        for id, document in enumerate(documents):
+            chunk = parser.get_nodes_from_documents([document])
+            filename = document.metadata['file_name']
+
+            for idx, chunk in enumerate(chunk):
+                chunk_metadata = chunk.metadata or {}
+                chunk_metadata.update({'file_name': filename})
+
+                text_node = TextNode(
+                    text=chunk.text,
+                    metadata=chunk_metadata
+                )
+
+                node.append(text_node)
+        
+        print('total node:', len(node))
+        index = VectorStoreIndex([], storage_context=storage_context)
+
+        batch_size = 5000
+
+        for i in range(0, len(node), batch_size):
+            batch = node[i : i + batch_size]
+            index.insert_nodes(batch)
     
     def reset_weaviate_vector_store(self):
-        schema = self.weaviate_client.schema.get_schema()
+        if self.weaviate_client is None:
+            raise ValueError("Weaviate client is not initialized.")
+
+        schema = self.weaviate_client.schema.get()
         classes = schema.get("classes", [])
 
         if not classes:
