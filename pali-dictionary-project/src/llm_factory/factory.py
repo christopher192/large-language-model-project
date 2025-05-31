@@ -1,4 +1,5 @@
 from .deepseek_wrapper import ChatDeepSeekWrapper
+from .openai_wrapper import ChatOpenAIWrapper
 
 class LLMFactory:
     def __init__(self, provider: str, framework: str, model: str, api_key: str,  temperature: float = 0.7):
@@ -10,7 +11,12 @@ class LLMFactory:
     
     def get_llm(self):
         if self.provider == "openai":
-            return "openai"
+            return ChatOpenAIWrapper(
+                framework=self.framework,
+                model=self.model,
+                api_key=self.api_key,
+                temperature=self.temperature
+            )
         elif self.provider == "deepseek":
             return ChatDeepSeekWrapper(
                 framework=self.framework,
