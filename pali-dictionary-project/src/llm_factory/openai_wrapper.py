@@ -1,3 +1,5 @@
+import uuid
+import datetime
 from openai import OpenAI
 
 class ChatOpenAIWrapper():
@@ -6,6 +8,11 @@ class ChatOpenAIWrapper():
         self.api_key = api_key
         self.model = model
         self.temperature = temperature
+
+    def generate_unique_id(user_id):
+        timestamp = datetime.datetime.now().strftime("%Y%m%d%H%M%S") # Format: YYYYMMDDHHMMSS
+        unique_str = uuid.uuid4().hex
+        return f"{user_id}-{timestamp}-{unique_str}"
 
     def chat(self, system_prompt: str, user_prompt: str) -> str:
         if self.framework == "original":
@@ -31,3 +38,13 @@ class ChatOpenAIWrapper():
 
         # Fallback return statement if the provider is not recognized
         return "Invalid provider type."
+
+    def batch_processing(self, system_prompt: str, user_prompt: str, batch_input: list[dict]) -> list[dict]:
+        if self.framework == "original":
+            # Overwrite the file with nothing
+            with open(self.jsonl_filepath, "w") as f:
+                # pass
+                f.write("")
+
+        # Return empty list if framework doesn't match
+        return []
