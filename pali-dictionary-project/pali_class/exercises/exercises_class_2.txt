@@ -3,123 +3,171 @@ Class 2 Exercises
 
 
 1. SN 12.1
+
 avijjāya tv'eva asesa-virāga-nirodhā saṅkhāra-nirodho, saṅkhāra-nirodhā viññāṇa-nirodho, viññāṇa-nirodhā nāmarūpa-nirodho, nāmarūpa-nirodhā saḷāyatana-nirodho, saḷāyatana-nirodhā phassa-nirodho, phassa-nirodhā vedanā-nirodho, vedanā-nirodhā taṇhā-nirodho, taṇhā-nirodhā upādāna-nirodho, upādāna-nirodhā bhava-nirodho, bhava-nirodhā jāti-nirodho, jāti-nirodhā jarā-maraṇaṃ soka-parideva-dukkha-domanass'upāyāsā nirujjhanti. 
-	
-	But from the complete fading away and cessation of ignorance there is cessation of volitional formations; from the cessation of volitional formations, cessation of consciousness; from the cessation of consciousness, cessation of name-and-form; from the cessation of name-and-form, cessation of the six sense bases; from the cessation of the six sense bases, cessation of contact; from the cessation of contact, cessation of feeling; from the cessation of feeling, cessation of craving; from the cessation of craving, cessation of clinging; from the cessation of clinging, cessation of existence; from the cessation of existence, cessation of birth; from the cessation of birth, aging-and-death, sorrow, lamentation, pain, displeasure, and despair cease.
-	2. SN10.8
+
+But from the complete fading away and cessation of ignorance there is cessation of volitional formations; from the cessation of volitional formations, cessation of consciousness; from the cessation of consciousness, cessation of name-and-form; from the cessation of name-and-form, cessation of the six sense bases; from the cessation of the six sense bases, cessation of contact; from the cessation of contact, cessation of feeling; from the cessation of feeling, cessation of craving; from the cessation of craving, cessation of clinging; from the cessation of clinging, cessation of existence; from the cessation of existence, cessation of birth; from the cessation of birth, aging-and-death, sorrow, lamentation, pain, displeasure, and despair cease.
+
+2. SN10.8
+
 buddho kira loke uppanno 
-	A Buddha has indeed arisen in the world.
-	3. TH 257 simpl
+
+A Buddha has indeed arisen in the world.
+
+3. TH 257 simpl
+
 araññe rukkhānaṃ mūlesu, kandarāsu guhāsu ca
-	
-	4. DN 22.1  simpl
+
+4. DN 22.1  simpl
+
 maggo hoti sokaparidevānaṃ samatikkamāya, ñāyassa adhigamāya, nibbānassa sacchikiriyāya.
-	
-	It is the path for the overcoming of sorrow and lamentation, for the attainment of the (right) method, for personal experience of total emancipation.
-	5. AN 10.48
+
+It is the path for the overcoming of sorrow and lamentation, for the attainment of the (right) method, for personal experience of total emancipation.
+
+5. AN 10.48
 
 uttarissa manussassa dhammo alam’ariyo ñāṇadassanassa viseso
-	
-	the state of a superior human being, the attainment of knowing and seeing, suitable for a noble person, 
-	6. DN 22.5 
+
+the state of a superior human being, the attainment of knowing and seeing, suitable for a noble person, 
+
+6. DN 22.5 
+
 atthi imasmiṃ kāye kesā lomā nakhā dantā taco
-	
-	There are in this body, hair [on the head], hairs of the body, nails, teeth, skin.
-	7. VIN PAT SE 55 simpl
+
+There are in this body, hair [on the head], hairs of the body, nails, teeth, skin.
+
+7. VIN PAT SE 55 simpl
+
 na sāmisena hatthena pānīyassa thālakaṃ paṭiggahessāmi iti sikkhā karaṇīyā
-	
-	I will not take a cup for drinking water with a soiled hand.
-	8. VIN PAT NID nidānuddeso
+
+I will not take a cup for drinking water with a soiled hand.
+
+8. VIN PAT NID nidānuddeso
+
 saṅgho uposathaṃ kareyya, pātimokkhaṃ uddiseyya
 
-	The community of monks could make an observance day [and] would recite the training rules.
-	9. SN 55.7
+The community of monks could make an observance day [and] would recite the training rules.
+
+9. SN 55.7
+
 itipi so bhagavā arahaṃ sammāsambuddho vijjācaraṇasampanno sugato lokavidū anuttaro purisadammasārathi satthā devamanussānaṃ buddho bhagavā’ti
-	
-	It is so (thus) “He [is] the Blessed One, the Worthy One, the fully Enlightened One, endowed with wisdom and ethical conduct, Fortunate One, knower of the world, incomparable leader of persons to be tamed, teacher of gods and humans, the Awakened One, the Blessed One.”
-	10. kāyassa bhedā
-	
-	From the break-up of the body
-	11. samaṇo gotamo
-	
-	The recluse Gotama
-	12. virāgāya nirodhāya
-	
-	for dispassion, for cessation
-	13. bālassa mohāya
-	
-	for the delusion of the fool
-	14. TH 251
+
+It is so (thus) “He [is] the Blessed One, the Worthy One, the fully Enlightened One, endowed with wisdom and ethical conduct, Fortunate One, knower of the world, incomparable leader of persons to be tamed, teacher of gods and humans, the Awakened One, the Blessed One.”
+
+10. kāyassa bhedā
+
+From the break-up of the body
+
+11. samaṇo gotamo
+
+The recluse Gotama
+
+12. virāgāya nirodhāya
+
+for dispassion, for cessation
+
+13. bālassa mohāya
+
+for the delusion of the fool
+
+14. TH 251
+
 kāmehi lokamhi
-	
-	[there is no satisfaction] by sensual pleasures in the world
-	15. devā manussā
-	
-	gods and humans
-	16. cāgo paṭinissaggo anālayo
-	
-	The relinquishing, the abandonment, the non-attachment
-	17. MN 107
+
+[there is no satisfaction] by sensual pleasures in the world
+
+15. devā manussā
+
+gods and humans
+
+16. cāgo paṭinissaggo anālayo
+
+The relinquishing, the abandonment, the non-attachment
+
+17. MN 107
+
 pāde pādaṃ
-	
-	[he places] a foot on a foot
-	18. DN 22.18
+
+[he places] a foot on a foot
+
+18. DN 22.18
+
 dhammānaṃ uppādāya chandaṃ
-	
-	[he arouses] desire for the arising of states of mind
-	19. khandhānaṃ bhedo
-	
-	the break-up of the aggregates
-	20. dhammā sekhassa
-	
-	qualities of a trainee
-	21. samaṇena vā brāhmaṇena vā devena vā mārena vā
-	
-	with either a recluse or a brahmin or a deity or Mara
-	22. SN 35.28
+
+[he arouses] desire for the arising of states of mind
+
+19. khandhānaṃ bhedo
+
+the break-up of the aggregates
+
+20. dhammā sekhassa
+
+qualities of a trainee
+
+21. samaṇena vā brāhmaṇena vā devena vā mārena vā
+
+with either a recluse or a brahmin or a deity or Mara
+
+22. SN 35.28
+
 sokehi paridevehi dukkhehi domanassehi upāyāsehi
-	
-	(burning) with griefs, lamentations, sufferings, distresses, afflictions
-	23. dhammo vinayo
-	
-	The Doctrine-Discipline
-	24. SN 12.41
+
+(burning) with griefs, lamentations, sufferings, distresses, afflictions
+
+23. dhammo vinayo
+
+The Doctrine-Discipline
+
+24. SN 12.41
+
 vinipātaṃ nirayaṃ
-	
-	[reborn] in a state of suffering, in hell.
-	25. MN 39
+
+[reborn] in a state of suffering, in hell.
+
+25. MN 39
+
 aparena samayena buddho
-	
-	on another occasion, the Awakened One…
-	26. gabbhe cīvaraṃ
-	
-	the robe in the room
-	27. VIN 1.1.4
+
+on another occasion, the Awakened One…
+
+26. gabbhe cīvaraṃ
+
+the robe in the room
+
+27. VIN 1.1.4
+
 āvāse vassaṃ
-	
-	(entered) the rainy season at the dwelling place.
-	28. MN 99
+
+(entered) the rainy season at the dwelling place.
+
+28. MN 99
+
 nīvaraṇehi brāhmaṇo
-	
-	The brahmin [filled] with the [five] hindrances
-	29. kāme brāhmaṇa
-	
-	O, brahmin! … sensual pleasures
-	30. DHP 331
+
+The brahmin [filled] with the [five] hindrances
+
+29. kāme brāhmaṇa
+
+O, brahmin! … sensual pleasures
+
+30. DHP 331
+
 atthamhi sahāyā
-	
-	[Good are] friends in [arisen] need 
-[Good are] friends when need [arises]
-	31. MN 35
+
+[Good are] friends in [arisen] need
+
+31. MN 35
+
 gotamo sāvake … gotamassa sāvakesu
-	
-	Gotama [trains] disciples…. Gotama’s [instruction presented] to disciples
-	32. kassapassa vinayasmiṃ
 
-	in the discipline of the Kassapa
-	
+Gotama [trains] disciples…. Gotama’s [instruction presented] to disciples
 
-	
+32. kassapassa vinayasmiṃ
+
+in the discipline of the Kassapa
+
+
+
 
 
 
@@ -128,16 +176,16 @@ Class 2 Extra
 
 1. AN 8.53
 dhammā virāgāya
-	
-	[these] things/qualities [lead] to dispassion
-	2. SN 22.59
+
+[these] things/qualities [lead] to dispassion
+2. SN 22.59
 saṅkhārā ābādhāya
-	
-	Volitional formations [are conducive for] disease
-	3. AN 8.19
+
+Volitional formations [are conducive for] disease
+3. AN 8.19
 saṅghamhā saṅgho
-	
-	[far] from the Saṅgha [and] the Saṅgha [is far from]…
-	________________
+
+[far] from the Saṅgha [and] the Saṅgha [is far from]…
+________________
 
 
