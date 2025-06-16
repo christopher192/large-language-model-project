@@ -1,133 +1,133 @@
 
 Class 3   
 
-1. Sutta Number: MN4
+Sutta Number: MN4
 Pali: ahaṃ bhavantaṃ gotamaṃ saraṇaṃ gacchāmi
 English Translation: I go for refuge to the master Gotama
 
-2. Sutta Number: DHP130 
+Sutta Number: DHP130 
 Pali: sabbe tasanti daṇḍassa.
 English Translation: All are fearful of a stick.
 
-3. Sutta Number: MN27 
+Sutta Number: MN27 
 Pali: tathāgate saddhaṃ paṭilabhati
 English Translation: He obtains faith in the Tathāgata.
 
-4. Sutta Number: MN64         
+Sutta Number: MN64         
 Pali: so tattha ṭhito āsavānaṃ khayaṃ pāpuṇāti.
 English Translation: Remaining there, he reaches the destruction of the defilements. 
 
-5. Sutta Number: DHP354        
+Sutta Number: DHP354        
 Pali: sabbarasaṃ dhammaraso jināti
 English Translation: The flavour of the Dhamma surpasses all other flavours.
 
-6. Sutta Number: MN39 
+Sutta Number: MN39 
 Pali: so ‘idaṃ dukkhan’ti yathābhūtaṃ pajānāti
 English Translation: He knows clearly “this [is] suffering” as it truly is.
 
-7. Sutta Number: VIN PAT NP 10 
+Sutta Number: VIN PAT NP 10 
 Pali: paṭiggaṇhātu āyasmā cīvaracetāpannaṃ
 English Translation: Let the venerable receive the robe-fund.
 
-8. Sutta Number: DN19.7 (simpl) 
+Sutta Number: DN19.7 (simpl) 
 Pali: rājā jotipālaṃ māṇavaṃ āmantayati
 English Translation: The king addresses the young gentleman (brahmin), Protector of the Light (Jotipāla). 
 
-9. Sutta Number: MN39 (simpl) 
+Sutta Number: MN39 (simpl) 
 Pali: so kāyaṃ vivekajena pītisukhena paripūreti
 English Translation: He completely fills up the body with joy and happiness produced by seclusion.
 
-10. Sutta Number: DN22.18         
+Sutta Number: DN22.18         
 Pali: sukhaṃ ca kāyena paṭisaṃvedeti
 English Translation: He experiences pleasure by means of the body.
 
-11. Sutta Number: SNP22
+Sutta Number: SNP22
 Pali: devā manussā ca sitā tiṭṭhanti 
 English Translation: Deities and human beings remain attached.
 
-12.  Sutta Number: SN56.11 (simpl)
+Sutta Number: SN56.11 (simpl)
 Pali: paṭipadā upasamāya sambodhāya nibbānāya saṃvattati 
 English Translation: The path of practice is conducive for calmness, full awakening [and] total emancipation.
 
-13.  Sutta Number: MN27 (simpl)
+Sutta Number: MN27 (simpl)
 Pali: dhammaṃ suṇāti putto 
 English Translation: The son listens to the Dhamma.
 
-14. Sutta Number: AN3.71 (simpl)
+Sutta Number: AN3.71 (simpl)
 Pali: sāvako dhammaṃ anussarati 
 English Translation: The disciple recollects the Dhamma.
 
-15.  Sutta Number: AN4.180 (simpl)
+Sutta Number: AN4.180 (simpl)
 Pali: āvāse therā viharanti 
 English Translation: The elders dwell in the residence.
 
-16. Sutta Number: MN2.4
+Sutta Number: MN2.4
 parikkhāraṃ paṭisevāmi 
 English Translation: I make use of the requisite.
 
-17. Sutta Number: AN 3.79
+Sutta Number: AN 3.79
 Pali: kusalā dhammā abhivaḍḍhanti 
 English Translation: Wholesome states of mind increase more and more.
 
-18.  Sutta Number: SN22.25 (simpl)
+Sutta Number: SN22.25 (simpl)
 Pali: saṅkhāresu chandaṃ ca rāgaṃ pajahatha. 
 English Translation: Abandon interest and desire for volitional formations.
 
-19.  Sutta Number: MN104 (simpl)
+Sutta Number: MN104 (simpl)
 Pali: passatha, ānanda, vacanassa pathaṃ 
 English Translation: You see, Ānanda, a course of speech
 
-20.  Sutta Number: SN55.6 (simpl)
+Sutta Number: SN55.6 (simpl)
 Pali: suṇāma: kosalehi mallesu pakkamati 
 English Translation: We hear: (the Blessed One) sets out from the Kosalans (on tour) in the Mallans.
 
-21.  Sutta Number: MN133 (simpl)
+Sutta Number: MN133 (simpl)
 Pali: dhārehi, bhikkhu, uddesaṃ ca vibhaṅgaṃ ca 
 English Translation: Remember, monk, the summary and the analysis.
 
-22.  Sutta Number: SN35.248 (simpl)
+Sutta Number: SN35.248 (simpl)
 Pali: puthujjano punabbhavāya ceteti 
 English Translation: A common person intends for rebirth.
 
-23.  Sutta Number: SNP34
+Sutta Number: SNP34
 Pali: passa lokassa pariyāyaṃ. 
 English Translation: See the nature of the world.
 
-24.  Sutta Number: MN36
+Sutta Number: MN36
 Pali: taṃ suṇāhi, sādhukaṃ manasi karohi, bhāsissāmi 
 English Translation: Listen to that, pay attention, I will speak.
 
-25.  Sutta Number: MN107 (simpl)
+Sutta Number: MN107 (simpl)
 Pali: pātimokkhe saṃvarena viharāhi 
 English Translation: Dwell with restraint according to the disciplinary code!
 
-26.  Sutta Number: VIN PAT PC 36
+Sutta Number: VIN PAT PC 36
 Pali: handa bhikkhu khāda vā bhuñja vā
 English Translation: Come on, bhikkhu, eat or consume!
 
-27.  Sutta Number: MN43
+Sutta Number: MN43
 Pali: āyasmato sāriputtassa bhāsitaṃ evaṃ ājānāma
 English Translation: We understand the statement of venerable Sāriputta thus.
 
-28.  Sutta Number: MN48
+Sutta Number: MN48
 Pali: labhāmi paccattaṃ samathaṃ
 English Translation: I obtain serenity individually.
 
-29. Sutta Number: VIN
+Sutta Number: VIN
 Pali: passasi taṃ āpattiṃ
 English Translation: You see that offence.
 
-30.  Sutta Number: SN41.3
+Sutta Number: SN41.3
 Pali: gahapati, pucchasi — “... diṭṭhiyo loke uppajjanti…
 English Translation: You ask, householder: “…views arise in the world…”
 
 Class 3 Extra 
 
-1. Sutta Number: MN30 (simpl) 
+Sutta Number: MN30 (simpl) 
 Pali: brāhmaṇa, puggalaṃ vadāmi. 
 English Translation: O brahmin, I speak (about) a person.
 
-2. Sutta Number: SN22.1 (simpl) 
+Sutta Number: SN22.1 (simpl) 
 Pali: sādhu āyasmantaṃ sāriputtaṃ paṭibhātu etassa bhāsitassa attho 
 English Translation: It would be good if the meaning of this statement may become evident to Venerable Sāriputta. (so that he could explain it to us); Fig: It would be good if Ven. Sāriputta would explain the meaning of this statement.
 
